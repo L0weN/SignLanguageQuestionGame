@@ -321,7 +321,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515106516}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -515,8 +515,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0025638, y: 589.57}
-  m_SizeDelta: {x: 1007, y: 1179.1}
+  m_AnchoredPosition: {x: 9.9756, y: 600.2484}
+  m_SizeDelta: {x: 899.5218, y: 999.3011}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &807890104
 CanvasRenderer:
@@ -909,7 +909,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032576534}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -1936,7 +1936,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1346971906}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -2095,22 +2095,85 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - image: {fileID: 2800000, guid: ed10cdc042c3e4f4c96fddacd48a487b, type: 3}
-    question: euro
-  - image: {fileID: 2800000, guid: 148ec16643fc6674781e4f2178ee2bb5, type: 3}
-    question: dolar
-  - image: {fileID: 2800000, guid: 443f44edd9836ae4ba4d1cab3148c76a, type: 3}
-    question: "t\xFCrk liras\u0131"
-  - image: {fileID: 2800000, guid: a65574be000185748b5ef41ce1f2085e, type: 3}
-    question: dinar
-  - image: {fileID: 2800000, guid: 9eea888512cbad0428bd2436aa005063, type: 3}
-    question: sterlin
+  - image: {fileID: 2800000, guid: 472361af34350664e962548fb41442a6, type: 3}
+    question: A
+  - image: {fileID: 2800000, guid: dbc5e779d86a5d84cab27e13d7798f41, type: 3}
+    question: B
+  - image: {fileID: 2800000, guid: af26d9bf2bbcb3f41aa865b0db48a1b0, type: 3}
+    question: C
+  - image: {fileID: 2800000, guid: d5a464aef50d39448ae984acf7b1bdfd, type: 3}
+    question: D
+  - image: {fileID: 2800000, guid: 68179eec357876e468f0a0aaf4f76f24, type: 3}
+    question: E
+  - image: {fileID: 2800000, guid: 7977cfec3d9ce6647be27f44f0d8a991, type: 3}
+    question: F
+  - image: {fileID: 2800000, guid: 5e73d9167e2bf9e4d89b60b270155fe2, type: 3}
+    question: G
+  - image: {fileID: 2800000, guid: 33c7b68d47eaa9545b85e44e35fe6453, type: 3}
+    question: H
+  - image: {fileID: 2800000, guid: 1321ac62903034040b8935c5e19143b8, type: 3}
+    question: I
+  - image: {fileID: 2800000, guid: 2f4aea5cd15df054b8d7236bd3492b97, type: 3}
+    question: J
+  - image: {fileID: 2800000, guid: 28540d7441279794fa7b58d802ff0cb5, type: 3}
+    question: K
+  - image: {fileID: 2800000, guid: 6ed149846fdc6da4a96e4650f38a7832, type: 3}
+    question: L
+  - image: {fileID: 2800000, guid: ddf2c4bedf2cb3a4998a3086b49a2fe7, type: 3}
+    question: M
+  - image: {fileID: 2800000, guid: e22e6001632af98468eac030cda47064, type: 3}
+    question: N
+  - image: {fileID: 2800000, guid: bd4518f32e025aa4aafa104bf4c76208, type: 3}
+    question: O
+  - image: {fileID: 2800000, guid: 99cb5c16a4677d14195854bff246f555, type: 3}
+    question: P
+  - image: {fileID: 2800000, guid: 37a8de239f113f94f9bf1fc85e81e0df, type: 3}
+    question: Q
+  - image: {fileID: 2800000, guid: ae4fdaf444d9c9947915585295a7c18e, type: 3}
+    question: R
+  - image: {fileID: 2800000, guid: 3fac6a8a489b0ab4a8ade364919b2c6f, type: 3}
+    question: S
+  - image: {fileID: 2800000, guid: 01806d85a35621b429616933c4f9cdf7, type: 3}
+    question: T
+  - image: {fileID: 2800000, guid: 9836b463900cc8b44aea619f29b19e1c, type: 3}
+    question: U
+  - image: {fileID: 2800000, guid: dbc09682dbe509a44a7b84e21331d1a7, type: 3}
+    question: V
+  - image: {fileID: 2800000, guid: 0bf73a4838c602b429dc27376f914fad, type: 3}
+    question: W
+  - image: {fileID: 2800000, guid: 0b9930bda1e483645b662bece7a1ccbf, type: 3}
+    question: X
+  - image: {fileID: 2800000, guid: 0332dfe2654ffc4409a563a99cec4b52, type: 3}
+    question: Y
+  - image: {fileID: 2800000, guid: 8858b3249648ecb43a5f1ce9f34e4234, type: 3}
+    question: Z
   answers:
-  - answer: euro
-  - answer: dolar
-  - answer: "t\xFCrk liras\u0131"
-  - answer: dinar
-  - answer: sterlin
+  - answer: A
+  - answer: B
+  - answer: C
+  - answer: D
+  - answer: E
+  - answer: F
+  - answer: G
+  - answer: H
+  - answer: I
+  - answer: J
+  - answer: K
+  - answer: L
+  - answer: M
+  - answer: N
+  - answer: O
+  - answer: P
+  - answer: Q
+  - answer: R
+  - answer: S
+  - answer: T
+  - answer: U
+  - answer: V
+  - answer: W
+  - answer: X
+  - answer: Y
+  - answer: Z
   questionImage: {fileID: 807890105}
   questionText: {fileID: 1346971908}
   answerText: {fileID: 121840680}

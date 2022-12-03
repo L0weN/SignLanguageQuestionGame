@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Animator animator;
     private bool isTrue;
     private int randomQuestionIndex;
+    private int random;
     private void Start()
     {
         if (unansweredQuestions == null || unansweredQuestions.Count == 0)
@@ -43,7 +44,8 @@ public class GameManager : MonoBehaviour
     }
     void GetRandomAnswer()
     {
-        if (Random.Range(0, 2) == 0)
+        random = Random.Range(0, 10);
+        if (random < 8)
         {
             currentAnswer = unaskedAnswers[randomQuestionIndex];
         }
@@ -60,30 +62,26 @@ public class GameManager : MonoBehaviour
         questionText.text = currentQuestion.question;
         answerText.text = currentAnswer.answer;
         CheckAnswer();
-        if (isTrue)
-        {
-            trueAnswerText.text = "CORRECT";
-            falseAnswerText.text = "WRONG";
-        }
-        else
-        {
-            trueAnswerText.text = "WRONG";
-            falseAnswerText.text = "CORRECT";
-        }
     }
     void CheckAnswer()
     {
         if (questionText.text == answerText.text)
         {
             isTrue = true;
+            trueAnswerText.text = "CORRECT";
+            falseAnswerText.text = "WRONG";
         }
         else
         {
             isTrue = false;
+            trueAnswerText.text = "WRONG";
+            falseAnswerText.text = "CORRECT";
         }
     }
     public void SelectTrueButton()
     {
+        trueAnswerText.enabled = true;
+        falseAnswerText.enabled = true;
         animator.SetTrigger("True");
         if (isTrue)
         {
@@ -98,6 +96,8 @@ public class GameManager : MonoBehaviour
     }
     public void SelectFalseButton()
     {
+        trueAnswerText.enabled = true;
+        falseAnswerText.enabled = true;
         animator.SetTrigger("False");
         if (!isTrue)
         {
@@ -114,6 +114,8 @@ public class GameManager : MonoBehaviour
     {
         unansweredQuestions.Remove(currentQuestion);
         yield return new WaitForSeconds(timeBetweenQuestions);
+        trueAnswerText.enabled = false;
+        falseAnswerText.enabled = false;
         GetRandomQuestion();
     }
 }
